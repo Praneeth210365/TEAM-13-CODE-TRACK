@@ -23,5 +23,17 @@
                     timestamp: new Date().toISOString(),
                     // Add more data like user ID if logged in, referrer, etc.
                 }),
-
+ })
+            .then(response => {
+                if (!response.ok) {
+                    console.error('Failed to track page view:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error tracking page view:', error);
+            });
+        });
+    </script>
+</body>
+</html>
 </html>
