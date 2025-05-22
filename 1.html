@@ -6,5 +6,22 @@
     <title>My Tracked Page</title>
 </head>
 <body>
-</body>
+</body
+>
+<script>
+        // This JavaScript runs when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // In a real scenario, you would send this data to your server
+            // Example using fetch API (requires a backend to receive it)
+            fetch('/api/track-page-view', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    page: window.location.pathname,
+                    timestamp: new Date().toISOString(),
+                    // Add more data like user ID if logged in, referrer, etc.
+                }),
+
 </html>
