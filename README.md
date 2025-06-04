@@ -1,3 +1,4 @@
+add a little more codes
 Code Track
 Code Track is a powerful and lightweight tool to help developers monitor, manage, and analyze their coding activity. Whether you're a solo developer, part of a team, or working on open-source projects, Code Track gives you clear insights into how your code evolves over time.
 
